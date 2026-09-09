@@ -18,12 +18,12 @@ else:
     else:
         grade = "A"
 
-if missed > 16 * 0.3:
-    print("Warning: you are not allowed to take the test")
-    result = "failed"
-elif score >= 60:
-    result = "passed"
-else:
-    result = "passed"
+    if missed > 16 * 0.3:
+        print("Warning: you are not allowed to take the test")
+        result = "failed"
+    elif score >= 60:
+        result = "passed"
+    else:
+        result = "failed"
 
-print (f"Your score is {score}, grade is {grade}, and result is {result}")
+    print (f"Your score is {score}, grade is {grade}, and result is {result}")
